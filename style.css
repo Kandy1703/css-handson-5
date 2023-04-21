@@ -1,0 +1,194 @@
+body{
+    background-color: yellow;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.num{
+    padding-top: 80px;
+}
+.row1{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgb(42, 42, 66);
+    border: 2px solod black; 
+    animation: sample1 2s infinite alternate;
+}
+@keyframes sample1{
+    0%{
+        transform: skew(-30deg);
+    }
+    100%{
+        transform: skew(30deg);
+    }
+}
+
+.row2{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgb(201, 201, 221);
+    border: 2px solod black; 
+    animation: sample2 2s infinite alternate;
+}
+@keyframes sample2{
+    0%{
+        transform: skewy(30deg);
+    }
+    100%{
+        transform: skewy(-30deg);
+    }
+}
+.row3{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgb(42, 42, 66);
+    border: 2px solod black; 
+    animation: sample3 2s infinite;
+}
+@keyframes sample3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.row4{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgb(42, 42, 66);
+    border: 2px solod black; 
+    animation: sample4 2s infinite alternate;
+}
+@keyframes sample4{
+    0%{
+        transform: scale(1,.5);
+    }
+    100%{
+        transform: scale();
+    }
+} 
+.row5{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: red;
+    border: 2px solod black; 
+    animation: sample5 2s infinite alternate;
+}
+@keyframes sample5{
+    0%{
+        transform: scale(.5,1);
+    }
+    100%{
+        transform: scale();
+    }
+} 
+.row6{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: green;
+    border: 2px solod black; 
+    animation: sample6 2s infinite alternate;
+}
+@keyframes sample6{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+} 
+
+h2{
+    font-size: 30px;
+}
+
+
+
+/* second page */
+
+
+.box1{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: green;
+    transition: 2s;
+}
+.box1:hover{
+    width: 400px;
+}
+.box2{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: green;
+    transition: 2s;
+}
+.box2:hover{
+    width: 400px;
+    height: 400px;
+}
+.box3{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: green;
+    transition: 2s;
+    
+}
+.box3:hover{
+    width: 400px;
+    transition-timing-function: linear;
+}
+.box4{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: green;
+    transition: 2s;
+}
+.box4:hover{
+    width: 400px;
+    transition-timing-function: ease;
+}
+.box5{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: green;
+    transition: 2s;
+}
+.box5:hover{
+    width: 400px;
+    transition-timing-function: ease-in;
+}
+.box6{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: green;
+    transition: 2s;
+}
+.box6:hover{
+    width: 400px;
+    transition-timing-function: ease-out;
+}
+.box7{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: green;
+    transition: 2s;
+}
+.box7:hover{
+    width: 400px;
+    transition-timing-function: ease-in-out;
+}

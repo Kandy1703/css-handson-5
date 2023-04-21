@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    border: 10px solid;
+    border-color: white green white orange;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.happy{
+    background-color: orange;
+    font-size: 50px;
+}
+.ind{
+    background-color: white;
+    font-size: 50px;
+}
+.day{
+    background-color: green;
+    font-size: 50px;
+}
+.sky{
+    background-image: url(./sky.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+}
+.road{
+    background-image: url(./road.jpg);
+    width: 500%;
+    height: 250px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    animation: sample 5s infinite linear;
+}
+@keyframes sample{
+    100%{
+        transform: translatex(-2500px);
+    }
+}
+.city{
+    background-image: url(./city.png);
+    width: 500%;
+    height: 300px;
+    position: absolute;
+    bottom: 199px;
+    z-index: 3;
+    animation: samplecity 5s infinite linear;
+}
+@keyframes samplecity{
+    100%{
+        transform: translatex(-2000px);
+    }
+}
+.sun img{  
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    z-index: 4;
+}
+.flag{
+    background-image: url(./Tiranga1.svg);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 240px;
+    left:850px; 
+    z-index: 6;
+    animation: samplecar 1s infinite;
+}
+.car img{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    bottom: 135px;
+    left: 540px;
+    z-index: 5;
+    animation: samplecar 1s infinite ;
+}
+@keyframes samplecar{
+    0%{
+        transform: translateY(1px);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(1px);
+    }
+}
+.wheel img{
+    width: 74px;
+    position: absolute;
+    bottom: 155px;
+    left: 573px;
+    z-index: 5;
+    animation: samplewheel 2s infinite linear;
+}
+.wheel2 img{
+    width: 74px;
+    position: absolute;
+    bottom: 155px;
+    left: 817px;
+    z-index: 5;
+    animation: samplewheel 2s infinite linear;
+}
+@keyframes samplewheel{
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
